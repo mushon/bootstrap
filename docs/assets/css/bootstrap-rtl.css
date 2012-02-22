@@ -33,6 +33,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  direction:rtl;
 }
 a:focus {
   outline: thin dotted #333;
@@ -478,6 +479,7 @@ code, pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  direction:ltr;
 }
 code {
   padding: 3px 4px;
