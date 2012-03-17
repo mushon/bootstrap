@@ -1,13 +1,15 @@
 BOOTSTRAP = ./docs/assets/css/bootstrap.css
-BOOTSTRAP_LESS = ./less/bootstrap.less
+BOOTSTRAP_LESS = ./less/bootstrap-rtl.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
-BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
+BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive-rtl.less
 LESS_COMPRESSOR ?= `which lessc`
 WATCHR ?= `which watchr`
 
 #
 # BUILD DOCS
 #
+
+all: bootstrap
 
 docs: bootstrap
 	rm docs/assets/bootstrap.zip
