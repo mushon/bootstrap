@@ -24,7 +24,7 @@ table {
   td {
     padding: 8px;
     line-height: @baseLineHeight;
-    text-align: left;
+    text-align: right;
     vertical-align: top;
     border-top: 1px solid #ddd;
   }
@@ -71,7 +71,7 @@ table {
   td + td,
   th + td,
   td + th {
-    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
   }
   // Prevent a double border
   thead:first-child tr:first-child th,
@@ -132,7 +132,7 @@ table {
 .tableColumns(@columnSpan: 1) {
   float: none;
   width: ((@gridColumnWidth) * @columnSpan) + (@gridGutterWidth * (@columnSpan - 1)) - 16;
-  margin-left: 0;
+  margin-right: 0;
 }
 table {
   .span1     { .tableColumns(1); }

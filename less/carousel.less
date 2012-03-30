@@ -32,7 +32,7 @@
   .prev { display: block; }
 
   .active {
-    left: 0;
+    right: 0;
   }
 
   .next,
@@ -43,21 +43,21 @@
   }
 
   .next {
-    left: 100%;
+    right: 100%;
   }
   .prev {
-    left: -100%;
+    right: -100%;
   }
   .next.left,
   .prev.right {
-    left: 0;
+    right: 0;
   }
 
   .active.left {
-    left: -100%;
+    right: -100%;
   }
   .active.right {
-    left: 100%;
+    right: 100%;
   }
 
 }
@@ -68,7 +68,7 @@
 .carousel-control {
   position: absolute;
   top: 40%;
-  left: 15px;
+  right: 15px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
@@ -91,8 +91,8 @@
 
   // Reposition the right one
   &.right {
-    left: auto;
-    right: 15px;
+    right: auto;
+    left: 15px;
   }
 
   // Hover state
@@ -108,8 +108,8 @@
 
 .carousel-caption {
   position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
   bottom: 0;
   padding: 10px 15px 5px;
   background: @grayDark;

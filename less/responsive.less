@@ -80,11 +80,11 @@
     float: none;
     width: auto;
     padding-top: 0;
-    text-align: left;
+    text-align: right;
   }
   // Move over all input controls and content
   .form-horizontal .controls {
-    margin-left: 0;
+    margin-right: 0;
   }
   // Move the options list down to align with labels
   .form-horizontal .control-list {
@@ -92,16 +92,16 @@
   }
   // Move over buttons in .form-actions to align with .controls
   .form-horizontal .form-actions {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   // Modals
   .modal {
     position: absolute;
     top:   10px;
-    left:  10px;
-    right: 10px;
+    right:  10px;
+    left: 10px;
     width: auto;
     margin: 0;
     &.fade.in { top: auto; }
@@ -137,7 +137,7 @@
   }
   // Undo negative margin on rows
   .row {
-    margin-left: 0;
+    margin-right: 0;
   }
   // Make all columns even
   .row > [class*="span"],
@@ -193,13 +193,13 @@
   }
   // Account for brand name
   .navbar .brand {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
     margin: 0 0 0 -5px;
   }
   // Nav collapse clears brand
   .navbar .nav-collapse {
-    clear: left;
+    clear: right;
   }
   // Block-level the nav
   .navbar .nav {
@@ -238,7 +238,7 @@
   .navbar .dropdown-menu {
     position: static;
     top: auto;
-    left: auto;
+    right: auto;
     float: none;
     display: block;
     max-width: none;
@@ -270,12 +270,12 @@
   // Pull right (secondary) nav content
   .navbar .nav.pull-right {
     float: none;
-    margin-left: 0;
+    margin-right: 0;
   }
   // Static navbar
   .navbar-static .navbar-inner {
-    padding-left:  10px;
-    padding-right: 10px;
+    padding-right:  10px;
+    padding-left: 10px;
   }
   // Navbar button
   .btn-navbar {
@@ -318,10 +318,10 @@
 
   // Thumbnails
   .thumbnails {
-    margin-left: -30px;
+    margin-right: -30px;
   }
   .thumbnails > li {
-    margin-left: 30px;
+    margin-right: 30px;
   }
 
 }

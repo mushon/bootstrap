@@ -35,8 +35,8 @@
 // ----------------------------------
 .center-block() {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 // IE7 inline-block
@@ -53,18 +53,18 @@
 // mean that space between those elements will be .6em (~2 space characters) in IE7,
 // instead of the 1 space in other browsers.
 .ie7-restore-left-whitespace() {
-  *margin-left: .3em;
+  *margin-right: .3em;
 
   &:first-child {
-    *margin-left: 0;
+    *margin-right: 0;
   }
 }
 
 .ie7-restore-right-whitespace() {
-  *margin-right: .3em;
+  *margin-left: .3em;
 
   &:last-child {
-    *margin-left: 0;
+    *margin-right: 0;
   }
 }
 
@@ -143,8 +143,8 @@
 // -------------------------
 .container-fixed() {
   width: @gridRowWidth;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   .clearfix();
 }
 
@@ -156,17 +156,17 @@
     width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
   } 
   .offset(@gridColumnWidth, @gridGutterWidth, @columns) {
-    margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+    margin-right: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
   }
   .gridColumn(@gridGutterWidth) {
-    float: left;
-    margin-left: @gridGutterWidth;
+    float: right;
+    margin-right: @gridGutterWidth;
   }
   // Take these values and mixins, and make 'em do their thang
   .generate(@gridColumns, @gridColumnWidth, @gridGutterWidth) {
     // Row surrounds the columns
     .row {
-      margin-left: @gridGutterWidth * -1;
+      margin-right: @gridGutterWidth * -1;
       .clearfix();
     }
     // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks @dhg)
@@ -210,8 +210,8 @@
     width: 1% * (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
   }
   .gridColumn(@fluidGridGutterWidth) {
-    float: left;
-    margin-left: @fluidGridGutterWidth;
+    float: right;
+    margin-right: @fluidGridGutterWidth;
   }
   // Take these values and mixins, and make 'em do their thang
   .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {
@@ -225,7 +225,7 @@
         #fluidGridSystem > .gridColumn(@fluidGridGutterWidth);
       }
       > [class*="span"]:first-child {
-        margin-left: 0;
+        margin-right: 0;
       }
       // Default columns
       > .span1     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 1); }
@@ -274,12 +274,12 @@
 // -------------------------
 // Use .makeRow and .makeColumn to assign semantic layouts grid system behavior
 .makeRow() {
-  margin-left: @gridGutterWidth * -1;
+  margin-right: @gridGutterWidth * -1;
   .clearfix();
 }
 .makeColumn(@columns: 1) {
-  float: left;
-  margin-left: @gridGutterWidth;
+  float: right;
+  margin-right: @gridGutterWidth;
   width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
 }
 
@@ -463,12 +463,12 @@
 #gradient {
   .horizontal(@startColor: #555, @endColor: #333) {
     background-color: @endColor;
-    background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
-    background-image: -ms-linear-gradient(left, @startColor, @endColor); // IE10
+    background-image: -moz-linear-gradient(right, @startColor, @endColor); // FF 3.6+
+    background-image: -ms-linear-gradient(right, @startColor, @endColor); // IE10
     background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
-    background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
-    background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
-    background-image: linear-gradient(left, @startColor, @endColor); // Le standard
+    background-image: -webkit-linear-gradient(right, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(right, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(right, @startColor, @endColor); // Le standard
     background-repeat: repeat-x;
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor)); // IE9 and down
   }
@@ -557,34 +557,34 @@
 #popoverArrow {
   .top(@arrowWidth: 5px) {
     bottom: 0;
-    left: 50%;
-    margin-left: -@arrowWidth;
-    border-left: @arrowWidth solid transparent;
+    right: 50%;
+    margin-right: -@arrowWidth;
     border-right: @arrowWidth solid transparent;
+    border-left: @arrowWidth solid transparent;
     border-top: @arrowWidth solid @black;
   }
   .left(@arrowWidth: 5px) {
-    top: 50%;
-    right: 0;
-    margin-top: -@arrowWidth;
-    border-top: @arrowWidth solid transparent;
-    border-bottom: @arrowWidth solid transparent;
-    border-left: @arrowWidth solid @black;
-  }
-  .bottom(@arrowWidth: 5px) {
-    top: 0;
-    left: 50%;
-    margin-left: -@arrowWidth;
-    border-left: @arrowWidth solid transparent;
-    border-right: @arrowWidth solid transparent;
-    border-bottom: @arrowWidth solid @black;
-  }
-  .right(@arrowWidth: 5px) {
     top: 50%;
     left: 0;
     margin-top: -@arrowWidth;
     border-top: @arrowWidth solid transparent;
     border-bottom: @arrowWidth solid transparent;
     border-right: @arrowWidth solid @black;
+  }
+  .bottom(@arrowWidth: 5px) {
+    top: 0;
+    right: 50%;
+    margin-right: -@arrowWidth;
+    border-right: @arrowWidth solid transparent;
+    border-left: @arrowWidth solid transparent;
+    border-bottom: @arrowWidth solid @black;
+  }
+  .right(@arrowWidth: 5px) {
+    top: 50%;
+    right: 0;
+    margin-top: -@arrowWidth;
+    border-top: @arrowWidth solid transparent;
+    border-bottom: @arrowWidth solid transparent;
+    border-left: @arrowWidth solid @black;
   }
 }

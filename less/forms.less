@@ -171,12 +171,12 @@ input[type="hidden"] {
 // Indent the labels to position radios/checkboxes as hanging
 .radio,
 .checkbox {
-  padding-left: 18px;
+  padding-right: 18px;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
-  float: left;
-  margin-left: -18px;
+  float: right;
+  margin-right: -18px;
 }
 
 // Move the options list down to align with labels
@@ -196,7 +196,7 @@ input[type="hidden"] {
 }
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
-  margin-left: 10px; // space out consecutive inline controls
+  margin-right: 10px; // space out consecutive inline controls
 }
 
 
@@ -245,7 +245,7 @@ select[class*="span"],
 textarea[class*="span"],
 .uneditable-input {
   float: none;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -347,7 +347,7 @@ select:focus:required:invalid {
   .ie7-inline-block();
   margin-bottom: 9px;
   vertical-align: middle;
-  padding-left: 5px;
+  padding-right: 5px;
 }
 
 
@@ -369,15 +369,15 @@ select:focus:required:invalid {
     }
   }
   .uneditable-input {
-    border-left-color: #ccc;
+    border-right-color: #ccc;
   }
   .add-on {
-    float: left;
+    float: right;
     display: block;
     width: auto;
     min-width: 16px;
     height: @baseLineHeight;
-    margin-right: -1px;
+    margin-left: -1px;
     padding: 4px 5px;
     font-weight: normal;
     line-height: @baseLineHeight;
@@ -401,25 +401,25 @@ select:focus:required:invalid {
 .input-append {
   input,
   .uneditable-input {
-    float: left;
+    float: right;
     .border-radius(3px 0 0 3px);
   }
   .uneditable-input {
-    border-left-color: #eee;
-    border-right-color: #ccc;    
+    border-right-color: #eee;
+    border-left-color: #ccc;    
   }
   .add-on {
-    margin-right: 0;
-    margin-left: -1px;
+    margin-left: 0;
+    margin-right: -1px;
     .border-radius(0 3px 3px 0);
   }
   input:first-child {
     // In IE7, having a hasLayout container (from clearfix's zoom:1) can make the first input
     // inherit the sum of its ancestors' margins.
-    *margin-left: -160px;
+    *margin-right: -160px;
 
     &+.add-on {
-      *margin-left: -21px;
+      *margin-right: -21px;
     }
   }
 }
@@ -430,8 +430,8 @@ select:focus:required:invalid {
 // -----------
 
 .search-query {
-  padding-left: 14px;
   padding-right: 14px;
+  padding-left: 14px;
   margin-bottom: 0; // remove the default margin on all inputs
   .border-radius(14px);
 }
@@ -506,17 +506,17 @@ legend + .control-group {
   }
   // Float the labels left
   .control-label {
-    float: left;
+    float: right;
     width: 140px;
     padding-top: 5px;
-    text-align: right;
+    text-align: left;
   }
   // Move over all input controls and content
   .controls {
-    margin-left: 160px;
+    margin-right: 160px;
   }
   // Move over buttons in .form-actions to align with .controls
   .form-actions {
-    padding-left: 160px;
+    padding-right: 160px;
   }
 }
