@@ -17,6 +17,9 @@
       .sidebar-nav {
         padding: 9px 0;
       }
+      div.tabbable{
+      	margin-right:0;
+      }
     </style>
     <link href="../../assets/css/bootstrap-responsive-rtl.css" rel="stylesheet">
 
@@ -55,11 +58,10 @@
       </div>
     </div>
     
-    <div class="container-fluid row-fluid">
+    <div class="container">
 	
-		<div class="tabbable tabs-left span9">
+		<div class="tabbable tabs-right span9">
 			
-			<a href="#" class="share">שיתוף</a>
 			<ul id="stages" class="nav nav-tabs">
 				<li class="billForm active"><a href="#billForm" data-toggle="tab">נוסח ההצעה</a></li>
 				<li class="initiated passed"><a href="#initiated" data-toggle="tab">יזום ההצעה</a></li>
@@ -71,15 +73,15 @@
 				<li class="vote3"><a href="#vote3" data-toggle="tab">קריאה שלושה</a></li>
 				<li class="accepted"><a href="#accepted" data-toggle="tab">ההצעה הופכת לחוק</a></li>
 			</ul>
-    	
-	    	<div class="tab-content">
-			    
-			    <article class="tab-pane active" id="billForm">
 
 				    <hgroup>
 				    	<h1 class="emphasize">חוק לשון הרע</h1>
 				        <h2>הצעת חוק איסור לשון הרע (תיקון – חשיפת פרטי מעוול), התש"ע–2010</h2>
 					</hgroup>
+    	
+	    	<div class="tab-content">
+			    
+			    <article class="tab-pane active" id="billForm">
 					
 					
 					<div class="accordion">
@@ -131,13 +133,47 @@
 	
 		<aside class="span3">
 	
+			<div class="btn-group btn-follow">
+			    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">מעקב <span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+			    	<li><a href="#">עדכון מיידי באי-מייל</a></li>
+			    	<li><a href="#">עדכון במייל שבועי</a></li>
+			    	<li><a href="#">עדכונים באתר בלבד</a></li>
+			    	<li><a href="#">שנה הגדרות עדכון</a></li>
+			    </ul>
+			</div>
+			<div class="btn-group btn-share">
+			    <a class="btn btn-info dropdown-toggle" data-toggle="dropdown" href="#">שיתוף <span class="caret"></span></a>
+			    <ul class="dropdown-menu">
+			    	<li><a href="#">פייסבוק</a></li>
+			    	<li><a href="#">טוויטר</a></li>
+			    	<li><a href="#">אי-מייל</a></li>
+			    	<li><a href="#">עמבד</a></li>
+			    </ul>
+		    </div>
+			
 			<div class="authors">
 		        <h3>יוזמי ההצעה</h3>
-			    <ul class="thumbnails" id="#initiators">
-				    <li class="span1">
-					    <a href="#" class="thumbnail">
-						    <img src="http://placehold.it/30x40" alt="">
-						    <h5>חברת הכנסת</h5>
+			    <ul class="profile" id="#initiators">
+				    <li class="">
+					    <a href="#" class="">
+						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
+						    <h4>זבולון אורלב</h4>
+						    <span>הבית היהודי</span>
+					    </a>
+				    </li>
+				    <li class="">
+					    <a href="#" class="">
+						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
+						    <h4>דניאל הרשקוביץ</h4>
+						    <span>הבית היהודי</span>
+					    </a>
+				    </li>
+				    <li class="">
+					    <a href="#" class="">
+						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
+						    <h4>פואד בן אליעזר</h4>
+						    <span>העבודה</span>
 					    </a>
 				    </li>
 			    </ul>	
