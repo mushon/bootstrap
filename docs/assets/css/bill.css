@@ -1,7 +1,7 @@
 body {
   padding-top: 60px;
   padding-bottom: 40px;
-  background: #d8dbd8;
+  background: url(../../../img/body_bg.png);
 }
 
 .emphasize{
@@ -31,22 +31,35 @@ body {
 }
 
 .bill #stages{
-	background:#f3f3f4;
-	margin: 0 -20px;
+	background: url(../../../img/bill_bg.png);
+	box-shadow:	2px 2px 15px rgba(0,0,0,0.2),
+				2px 2px 5px white inset;
+	margin: 0 -21px 0 -20px;
 	position: relative;
 	min-height: 660px;
+	border: 1px solid #babbb8;
 }
 
 #stages > .tab-pane.active{
-	background: #fff;
+	background: url(../../../img/gridgrey_bg.png);
+	box-shadow:	2px 2px 15px rgba(0,0,0,0.2);
 	position: absolute;
-	top: 119px;
+	top: 118px;
 	width: 578px;
 	min-height: 490px;
-	background: #f5f9f5;
-	border: 1px solid #9fbe9b;
+	border: 1px solid #BABBB8;
 	border-right: 0;
 	padding: 20px 20px;
+}
+
+#stages > .tab-pane.passed{
+	background: url(../../../img/gridgreen_bg.png);
+	border-color: #9fbe9b;
+}
+
+#stages > .tab-pane.rejected{
+	background: url(../../../img/gridred_bg.png);
+	border-color: #eea59e;
 }
 
 #stages > .tab-pane.active h2,
@@ -78,14 +91,14 @@ body {
 
 .bill ul#stage-buttons{
     border: 0 none;
-    margin: 60px 0 0 -10px;
+    margin: 60px 0 0 -11px;
     position: relative;
     width: 70px;
     z-index: 10;
 }
 
 .bill ul#stage-buttons li{
-	background: url(../../../img/bill_bg.png) top right no-repeat;
+	background: url(../../../img/bill_buttons_bg.png) top right no-repeat;
 }
 
 .bill ul#stage-buttons li.active,
@@ -98,7 +111,7 @@ body {
 }
 
 .bill ul#stage-buttons a{
-    background: url("../../../img/bill_icons.png") no-repeat;
+    background: url(../../../img/bill_icons.png) no-repeat;
     border: 0 none;
     border-radius: 0 0 0 0;
     display: block;
