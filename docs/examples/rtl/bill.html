@@ -51,7 +51,7 @@
 	
 		<div class="tabbable tabs-right span9">
 			
-			<ul id="stages" class="nav nav-tabs">
+			<ul id="stage-buttons" class="nav nav-tabs">
 				<li class="billForm active"><a href="#billForm" data-toggle="tab">נוסח ההצעה</a></li>
 				<li class="initiated passed"><a href="#initiated" data-toggle="tab">יזום ההצעה</a></li>
 				<li class="govposition passed"><a href="#govposition" data-toggle="tab">עמדת הממשלה</a></li>
@@ -64,10 +64,10 @@
 				<li class="accepted"><a href="#accepted" data-toggle="tab">ההצעה הופכת לחוק</a></li>
 			</ul>
     	
-	    	<div class="tab-content">
+	    	<div id="stages" class="tab-content">
 	    		
 	    		<hgroup>
-			    	<h1 class="emphasize">חוק לשון הרע</h1>
+			    	<h1><span class="emphasize">חוק לשון הרע</span></h1>
 			        <h2>הצעת חוק איסור לשון הרע (תיקון – חשיפת פרטי מעוול), התש"ע–2010</h2>
 				</hgroup>
 			    
@@ -122,8 +122,22 @@
 			    <div class="tab-pane active" id="billForm">
 					<!--Keep this one empty-->
 				</div>
-				<div class="tab-pane" id="initiated"><h2>יזום ההצעה</h2>
-					
+				<div class="tab-pane tabbable" id="initiated"><h2>יזום ההצעה</h2>
+				    <ul class="nav nav-pills">
+					    <li class="active">
+					    	<a href="#billForm-understand" data-toggle="tab">מה זה אומר?</a>
+					    </li>
+					    <li><a href="#billForm-act" data-toggle="tab">מה אפשר לעשות לגבי זה?</a></li>
+					</ul>
+					<div class="tab-pane active" id="billForm-understand">
+						<p>בשלב זה חבר הכנסת מניח את ההצעה פרטית על שולחן הכנסת. מרגע זה על ההצעה להיות "מונחת" במשך 45 יום לפני שניתן להעלותה להצבעה במליאה, אלא אם ההצעה זכתה לפטור מחובת הנחה (זהו פטור חריג שכמעט ואינו ניתן). טכנית, ההצעה עוברת למזכירות בצירוף חתימות הח"כים שיוזמים או מצטרפים להצעה; משם היא עוברת ללשכה המשפטית בכנסת, הבוחנת את חוקיותה, ניסוחה והתאמתה לחקיקה קיימת, ולעתים מחזירה אותה עם הערות או שאלות לח"כ היוזם. בסיום התהליך מקבלת ההצעה "פ", שהוא מספר סידורי המאפשר לגשת אליה, ואז באפשרות חבר הכנסת לבקש להעלותה להצבעה בקריאה טרומית, על פי מכסות החקיקה שהוקצו לו.</p>
+						<p>במקרים רבים, חברי כנסת שמבינים שהצעת החוק שלהם לא תעבור (אם בגלל התנגדות הממשלה, או בגלל חוסר תמיכה בקרב חברי הכנסת האחרים) עשויים שלא להעלות אותה להצבעה, או להסב אותה לנושא לדיון.</p>
+						<p>הרוב המוחלט של אלפי הצעות החוק המוגשות מדי מושב נעצרות בשלב הזה, של הנחת ההצעה, והופכות למה שמכונה "הצהרת חוק", שכן מדובר בחקיקה שכלל לא הועמדה להצבעה, אבל משמשת את חבר הכנסת למטרות תקשורתיות/הסברתיות.
+					</div>
+					<div class="tab-pane" id="billForm-act">
+						<p>מה לעשות בשלב זה?</p>
+					</div>
+				</p>
 				</div>
 				<div class="tab-pane" id="govposition"><h2>עמדת הממשלה</h2></div>
 				<div class="tab-pane" id="prevote"><h2>קריאה טרומית</h2></div>

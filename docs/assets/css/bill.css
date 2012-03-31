@@ -4,7 +4,12 @@ body {
   background: #d8dbd8;
 }
 
-.bill .container .tab-content{
+.emphasize{
+  padding: 0 20px;
+  background: #f8f800;
+}
+
+.bill #stages{
 	background:#f3f3f4;
 	margin: 0 -20px;
 	position: relative;
@@ -28,7 +33,7 @@ body {
 	padding: 40px;
 }
 
-.bill .tab-pane.active{
+#stages > .tab-pane.active{
 	background: #fff;
 	position: absolute;
 	top: 119px;
@@ -40,29 +45,37 @@ body {
 	padding: 20px 20px;
 }
 
-.bill .tab-pane.active h2,
-.bill .tab-pane.active p{
+#stages > .tab-pane.active h2,
+#stages > .tab-pane.active p,
+#stages > .tab-pane.active ul{
 	padding: 0 23px; 
 }
 
 /* Responsive*/
 @media (min-width: 1200px) {
-	.bill .tab-pane.active{
+	#stages > .tab-pane.active{
 		width: 748px;
 	}
 }
 /* End Responsive*/
 
+.tab-pane{
+	display:none;
+}
+.tab-pane.active{
+	display:block;
+}
+
 #billForm{
 	display: none;
 }
 
-.bill ul#stages{
+.bill ul#stage-buttons{
 	width: 60px;
 	margin: 60px 0 0;
 }
 
-.bill ul#stages a{
+.bill ul#stage-buttons a{
 	padding: 0;
 	text-indent: -200%;
 	display:block;
