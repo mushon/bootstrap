@@ -1,15 +1,17 @@
 body {
   padding-top: 60px;
   padding-bottom: 40px;
-  background: #d8dbd8;
+  background: url(../../../img/body_bg.png);
 }
 
-.bill .container .tab-content{
-	background:#f3f3f4;
-	margin: 0 -20px;
-	position: relative;
-	min-height: 660px;
+.emphasize{
+  padding: 0 20px;
+  background: #f8f800;
 }
+
+/********************************
+  Stages 
+********************************/
 
 .bill .container hgroup{
 	text-align: center;
@@ -28,51 +30,112 @@ body {
 	padding: 40px;
 }
 
-.bill .tab-pane.active{
-	background: #fff;
+.bill #stages{
+	background: url(../../../img/bill_bg.png);
+	box-shadow:	2px 2px 15px rgba(0,0,0,0.2),
+				2px 2px 5px white inset;
+	margin: 0 -21px 0 -20px;
+	position: relative;
+	min-height: 660px;
+	border: 1px solid #babbb8;
+}
+
+#stages > .tab-pane.active{
+	background: url(../../../img/gridgrey_bg.png);
+	box-shadow:	2px 2px 15px rgba(0,0,0,0.2);
 	position: absolute;
-	top: 119px;
+	top: 118px;
 	width: 578px;
 	min-height: 490px;
-	background: #f5f9f5;
-	border: 1px solid #9fbe9b;
+	border: 1px solid #BABBB8;
 	border-right: 0;
 	padding: 20px 20px;
 }
 
-.bill .tab-pane.active h2,
-.bill .tab-pane.active p{
+#stages > .tab-pane.passed{
+	background: url(../../../img/gridgreen_bg.png);
+	border-color: #9fbe9b;
+}
+
+#stages > .tab-pane.rejected{
+	background: url(../../../img/gridred_bg.png);
+	border-color: #eea59e;
+}
+
+#stages > .tab-pane.active h2,
+#stages > .tab-pane.active p,
+#stages > .tab-pane.active ul{
 	padding: 0 23px; 
 }
 
 /* Responsive*/
 @media (min-width: 1200px) {
-	.bill .tab-pane.active{
+	#stages > .tab-pane.active{
 		width: 748px;
 	}
 }
 /* End Responsive*/
 
+.tab-pane{
+	display:none;
+}
+.tab-pane.active{
+	display:block;
+}
+
 #billForm{
 	display: none;
 }
 
-.bill ul#stages{
-	width: 60px;
-	margin: 60px 0 0;
+/* side-tabs buttons */
+
+.bill ul#stage-buttons{
+    border: 0 none;
+    margin: 60px 0 0 -11px;
+    position: relative;
+    width: 70px;
+    z-index: 10;
 }
 
-.bill ul#stages a{
-	padding: 0;
-	text-indent: -200%;
-	display:block;
-	overflow: hidden;
-	min-width: 58px;
-	min-height: 58px;
-	border: #aaa solid 1px;
-	border-radius: 0;
-	margin-bottom:0;
+.bill ul#stage-buttons li{
+	background: url(../../../img/bill_buttons_bg.png) top right no-repeat;
 }
+
+.bill ul#stage-buttons li.active,
+.bill ul#stage-buttons li.active:hover{
+	background-position: center right;
+}
+
+.bill ul#stage-buttons li:hover{
+	background-position: bottom right;
+}
+
+.bill ul#stage-buttons a{
+    background: url(../../../img/bill_icons.png) no-repeat;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    display: block;
+    margin-bottom: 0;
+    min-height: 60px;
+    min-width: 60px;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -200%;
+}
+
+.bill ul#stage-buttons .billForm a{ background-position: 10px 0;}
+.bill ul#stage-buttons .initiated a{ background-position: 10px -60px;}
+.bill ul#stage-buttons .govposition a{ background-position: 10px -120px;}
+.bill ul#stage-buttons .prevote a{ background-position: 10px -180px;}
+.bill ul#stage-buttons .committee1 a{ background-position: 10px -240px;}
+.bill ul#stage-buttons .vote1 a{ background-position: 10px -300px;}
+.bill ul#stage-buttons .committee2 a{ background-position: 10px -360px;}
+.bill ul#stage-buttons .vote2 a{ background-position: 10px -420px;}
+.bill ul#stage-buttons .vote3 a{ background-position: 10px -480px;}
+.bill ul#stage-buttons .accepted a{ background-position: 10px -540px;}
+
+
+/* END side-tabs buttons */
 
 .bill div.tabbable{
 	margin-right:0;
