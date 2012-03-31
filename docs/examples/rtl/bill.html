@@ -51,7 +51,7 @@
 	
 		<div class="tabbable tabs-right span9">
 			
-			<ul id="stages" class="nav nav-tabs">
+			<ul id="stage-buttons" class="nav nav-tabs">
 				<li class="billForm active"><a href="#billForm" data-toggle="tab">נוסח ההצעה</a></li>
 				<li class="initiated passed"><a href="#initiated" data-toggle="tab">יזום ההצעה</a></li>
 				<li class="govposition passed"><a href="#govposition" data-toggle="tab">עמדת הממשלה</a></li>
@@ -64,10 +64,10 @@
 				<li class="accepted"><a href="#accepted" data-toggle="tab">ההצעה הופכת לחוק</a></li>
 			</ul>
     	
-	    	<div class="tab-content">
+	    	<div id="stages" class="tab-content">
 	    		
 	    		<hgroup>
-			    	<h1 class="emphasize">חוק לשון הרע</h1>
+			    	<h1><span class="emphasize">חוק לשון הרע</span></h1>
 			        <h2>הצעת חוק איסור לשון הרע (תיקון – חשיפת פרטי מעוול), התש"ע–2010</h2>
 				</hgroup>
 			    
@@ -122,25 +122,39 @@
 			    <div class="tab-pane active" id="billForm">
 					<!--Keep this one empty-->
 				</div>
-				<div class="tab-pane" id="initiated"><h2>יזום ההצעה</h2>
-					
+				<div class="tab-pane passed tabbable" id="initiated"><h2>יזום ההצעה</h2>
+				    <ul class="nav nav-pills">
+					    <li class="active">
+					    	<a href="#billForm-understand" data-toggle="tab">מה זה אומר?</a>
+					    </li>
+					    <li><a href="#billForm-act" data-toggle="tab">מה אפשר לעשות לגבי זה?</a></li>
+					</ul>
+					<div class="tab-pane active" id="billForm-understand">
+						<p>בשלב זה חבר הכנסת מניח את ההצעה פרטית על שולחן הכנסת. מרגע זה על ההצעה להיות "מונחת" במשך 45 יום לפני שניתן להעלותה להצבעה במליאה, אלא אם ההצעה זכתה לפטור מחובת הנחה (זהו פטור חריג שכמעט ואינו ניתן). טכנית, ההצעה עוברת למזכירות בצירוף חתימות הח"כים שיוזמים או מצטרפים להצעה; משם היא עוברת ללשכה המשפטית בכנסת, הבוחנת את חוקיותה, ניסוחה והתאמתה לחקיקה קיימת, ולעתים מחזירה אותה עם הערות או שאלות לח"כ היוזם. בסיום התהליך מקבלת ההצעה "פ", שהוא מספר סידורי המאפשר לגשת אליה, ואז באפשרות חבר הכנסת לבקש להעלותה להצבעה בקריאה טרומית, על פי מכסות החקיקה שהוקצו לו.</p>
+						<p>במקרים רבים, חברי כנסת שמבינים שהצעת החוק שלהם לא תעבור (אם בגלל התנגדות הממשלה, או בגלל חוסר תמיכה בקרב חברי הכנסת האחרים) עשויים שלא להעלות אותה להצבעה, או להסב אותה לנושא לדיון.</p>
+						<p>הרוב המוחלט של אלפי הצעות החוק המוגשות מדי מושב נעצרות בשלב הזה, של הנחת ההצעה, והופכות למה שמכונה "הצהרת חוק", שכן מדובר בחקיקה שכלל לא הועמדה להצבעה, אבל משמשת את חבר הכנסת למטרות תקשורתיות/הסברתיות.
+					</div>
+					<div class="tab-pane" id="billForm-act">
+						<p>מה לעשות בשלב זה?</p>
+					</div>
+				</p>
 				</div>
-				<div class="tab-pane" id="govposition"><h2>עמדת הממשלה</h2></div>
-				<div class="tab-pane" id="prevote"><h2>קריאה טרומית</h2></div>
-				<div class="tab-pane" id="committee1"><h2>ישיבות ועדה</h2></div>
-				<div class="tab-pane" id="vote1"><h2>קריאה ראשונה</h2>
+				<div class="tab-pane passed" id="govposition"><h2>עמדת הממשלה</h2></div>
+				<div class="tab-pane passed" id="prevote"><h2>קריאה טרומית</h2></div>
+				<div class="tab-pane passed" id="committee1"><h2>ישיבות ועדה</h2></div>
+				<div class="tab-pane rejected" id="vote1"><h2>קריאה ראשונה</h2>
 					<p>הצבעה על חוקים פרטיים בקריאה ראשונה מתנהלת באופן דומה לקריאה טרומית. עבור חקיקה ממשלתית, הפטורה מדיון מקדים, מדובר בהצבעה הראשונה על החוק, ולכן גם נקבעת בהצבעה הועדה שתדון בהצעה ותכין אותה להמשך החקיקה. כפי שקורה עם הצעות פרטיות בקריאה טרומית, אם מוצעת יותר מועדה מטפלת אחת, יוכרע הדבר בועדת הכנסת. הצבעות על חוקים בקריאה ראשונה מתקיימות לרוב בימים שני ושלישי. לאחר הקריאה הראשונה עוברת ההצעה להכנה לקריאה שניה ושלישית בועדה שנקבעה לה.</p>
 					<p>קידומן של הצעות רבות נקטע כשהכנסת מתפזרת לטובת בחירות, ואז יש להניחן מחדש. כדי לחסוך זאת, על הצעת חוק שעברה בקריאה ראשונה ניתן לבקש להחיל דין רציפות, שמשמעותו שהטיפול בהצעת החוק ימשיך בכנסת החדשה מהנקודה שבה הפסיק בקודמת. הדבר נקבע בהצבעה במליאת הכנסת, לבקשת הממשלה (אם מדובר בהצעה ממשלתית), או לבקשת חבר הכנסת מגיש ההצעה, אם מדובר בהצעה פרטית. לא ניתן להחיל דין רציפות על הצעה פרטית אם חבר הכנסת שהגיש אותה לא נבחר לכנסת החדשה.</p>
 				</div>
-				<div class="tab-pane" id="committee2"><h2>ישיבות ועדה</h2></div>
-				<div class="tab-pane" id="vote2"><h2>קריאה שניה</h2></div>
-				<div class="tab-pane" id="vote3"><h2>קריאה שלושה</h2></div>
-				<div class="tab-pane" id="accepted"><h2>ההצעה הופכת לחוק</h2></div>
+				<div class="tab-pane disabled" id="committee2"><h2>ישיבות ועדה</h2></div>
+				<div class="tab-pane disabled" id="vote2"><h2>קריאה שניה</h2></div>
+				<div class="tab-pane disabled" id="vote3"><h2>קריאה שלושה</h2></div>
+				<div class="tab-pane disabled" id="accepted"><h2>ההצעה הופכת לחוק</h2></div>
 		
 			</div><!-- tab-content -->
 		</div><!-- tabbable -->
 	
-		<aside class="span3">
+		<aside class="span3 sidebar" >
 	
 			<div class="btn-group btn-follow">
 			    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">מעקב <span class="caret"></span></a>
@@ -160,34 +174,113 @@
 			    	<li><a href="#">עמבד</a></li>
 			    </ul>
 		    </div>
-			
-			<div class="authors">
+<!-- יוזמים -->			
+			<div class="sidebar-container">
 		        <h3>יוזמי ההצעה</h3>
 			    <ul class="profile" id="#initiators">
 				    <li class="">
 					    <a href="#" class="">
 						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
-						    <h4>זבולון אורלב</h4>
+						    <strong>זבולון אורלב</strong>
 						    <span>הבית היהודי</span>
 					    </a>
 				    </li>
 				    <li class="">
 					    <a href="#" class="">
 						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
-						    <h4>דניאל הרשקוביץ</h4>
+						    <strong>דניאל הרשקוביץ</strong>
 						    <span>הבית היהודי</span>
 					    </a>
 				    </li>
 				    <li class="">
 					    <a href="#" class="">
 						    <img src="http://placehold.it/26x38" alt="חברת הכנסת">
-						    <h4>פואד בן אליעזר</h4>
+						    <strong>פואד בן אליעזר</strong>
 						    <span>העבודה</span>
 					    </a>
 				    </li>
 			    </ul>	
 			</div>
+<!-- נושאים -->
+			<div class="sidebar-container">
+		        <h3>נושאים</h3>
+				<ul>
+				    <li  id="tags" class="sidebar-container-link-li">
+						<a>אינטרנט</a>/
+						<a>זכויות הפרט</a>/
+						<a>חופש הביטוי</a>/
+						<a>טכנולוגיה</a>
+					</li>
+			</div>
 			
+<!-- דיון ציבורי -->
+			<div class="sidebar-container">
+		        <h3>דיון ציבורי</h3>
+				<div class="public-debate-link-container">
+					<a id="comments" class="public-debate-link">
+						85
+						<span>תגובות</span>
+					</a>
+				</div>
+				<div class="public-debate-link-container">
+					<a id="links" class="public-debate-link">
+						12
+						<span>קישורים</span>
+					</a>
+				</div>
+				<div class="public-debate-link-container">
+					<a id="embeds" class="public-debate-link">
+						4
+						<span>עמבדים</span>
+					</a>
+				</div>
+				<div class="public-debate-link-container">
+					<a id="following" class="public-debate-link">
+						37
+						<span>עוקבים</span>
+					</a>
+				</div>
+			</div>
+			
+<!-- אג'נדות -->
+			<div class="sidebar-container">
+		        <h3>אג'נדות מקושרות</h3>
+				<ul  id="agendas">
+				    <li class="sidebar-container-link-li">
+					    <a href="#" class="sidebar-container-link">
+						    <strong>סביבת ופיתוח בר-קיימא</strong>
+						    <span>בעריכת חיים וסביבה</span>
+					    </a>
+				    </li>
+				    <li class="sidebar-container-link-li">
+					    <a href="#" class="sidebar-container-link">
+						    <strong>סביבת ופיתוח בר-קיימא</strong>
+						    <span>בעריכת חיים וסביבה</span>
+					    </a>
+				    </li>
+			    </ul>	
+			</div>
+			
+<!-- נושאים -->
+			<div class="sidebar-container">
+		        <h3>מסמכים מקושרים</h3>
+				<ul  id="#agendas">
+				    <li class="">
+					    <a href="#" class="">
+						 <img src="http://placehold.it/26x38" alt="מסמך מקושר">
+						    <strong>סביבת ופיתוח בר-קיימא</strong>
+						    <span>בעריכת חיים וסביבה</span>
+					    </a>
+				    </li>
+				    <li  class="">
+					    <a href="#" class="">
+							<img src="http://placehold.it/26x38" alt="מסמך מקושר">
+						    <strong>סביבת ופיתוח בר-קיימא</strong>
+						    <span>בעריכת חיים וסביבה</span>
+					    </a>
+				    </li>
+			    </ul>	
+			</div>
 		</aside>
 
       <hr>
