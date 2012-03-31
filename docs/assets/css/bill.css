@@ -34,7 +34,6 @@ body {
 	background: url(../../../img/bill_bg.png);
 	box-shadow:	2px 2px 15px rgba(0,0,0,0.2),
 				2px 2px 5px white inset;
-	margin: 0 -21px 0 -20px;
 	position: relative;
 	min-height: 660px;
 	border: 1px solid #babbb8;
@@ -156,15 +155,24 @@ body {
     line-height: 0.7em;
     padding-top: 4px;
 }
-.sidebar span{
+.sidebar-container span{
 	color:#898989;
 	display: block;
 }
 .profile{
 	font-size:15px;
 }
-.sidebar li{
-	
+.sidebar .btn-group{
+	margin: 50px 0;	
+}
+.sidebar .btn-group > a.btn{
+	margin: 0 55px;
+	display: block;
+	width: 133px;
+	float: none;
+}
+
+.sidebar li{	
     border-bottom: 1px solid #EEEEEE;
     clear: both;
     list-style: none outside none;
@@ -180,7 +188,7 @@ body {
 	display: block;
     padding-bottom: 3px;
 }
-.sidebar > div{
+.sidebar > .sidebar-container{
 	float: right;
     margin-bottom: 20px;
     width: 100%;
@@ -198,9 +206,6 @@ body {
 }
 .public-debate-link{
 	padding-right:44px;
-}
-.public-debate-link #span{
-	display:block;
 }
 #comments{
 	background: url("../../../img/comments.png") no-repeat scroll right top transparent;
