@@ -5,9 +5,10 @@ body {
 }
 
 .bill .container .tab-content{
-	background:#fff;
+	background:#f3f3f4;
 	margin: 0 -20px;
 	position: relative;
+	min-height: 660px;
 }
 
 .bill .container hgroup{
@@ -31,19 +32,27 @@ body {
 	background: #fff;
 	position: absolute;
 	top: 119px;
-	width: 533px;
-	min-height: 398px;
+	width: 578px;
+	min-height: 490px;
 	background: #f5f9f5;
 	border: 1px solid #9fbe9b;
 	border-right: 0;
-	padding: 20px 43px;
+	padding: 20px 20px;
 }
 
+.bill .tab-pane.active h2,
+.bill .tab-pane.active p{
+	padding: 0 23px; 
+}
+
+/* Responsive*/
 @media (min-width: 1200px) {
 	.bill .tab-pane.active{
-		width: 703px;
+		width: 748px;
 	}
 }
+/* End Responsive*/
+
 #billForm{
 	display: none;
 }
