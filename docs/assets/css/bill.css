@@ -31,7 +31,7 @@ body {
 	background: #fff;
 	position: absolute;
 	top: 119px;
-	width: 513px;
+	width: 533px;
 	min-height: 398px;
 	background: #f5f9f5;
 	border: 1px solid #9fbe9b;
@@ -41,7 +41,7 @@ body {
 
 @media (min-width: 1200px) {
 	.bill .tab-pane.active{
-		width: 683px;
+		width: 703px;
 	}
 }
 #billForm{
