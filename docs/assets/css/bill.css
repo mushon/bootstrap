@@ -1,0 +1,74 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #d8dbd8;
+}
+
+.bill .container .tab-content{
+	background:#fff;
+	margin: 0 -20px;
+}
+
+.bill .container hgroup{
+	text-align: center;
+	margin-top:50px;
+}
+
+.bill .container h1,
+.bill .container h2{
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 0;
+	line-height: 24px;
+}
+
+.bill .accordion{
+	padding: 40px;
+}
+
+.bill .tab-pane.active{
+	background: #fff;
+	position: absolute;
+	top: 179px;
+	width: 513px;
+	min-height: 398px;
+	background: #f5f9f5;
+	border: 1px solid #9fbe9b;
+	border-right: 0;
+	padding: 20px 43px;
+}
+
+@media (min-width: 1200px) {
+	.bill .tab-pane.active{
+		width: 683px;
+	}
+}
+#billForm{
+	display: none;
+}
+
+.bill ul#stages{
+	width: 60px;
+	margin: 60px 0 0;
+}
+
+.bill ul#stages a{
+	padding: 0;
+	text-indent: -200%;
+	display:block;
+	overflow: hidden;
+	min-width: 58px;
+	min-height: 58px;
+	border: #aaa solid 1px;
+	border-radius: 0;
+	margin-bottom:0;
+}
+
+.bill div.tabbable{
+	margin-right:0;
+}
+
+
+.sidebar-nav {
+  padding: 9px 0;
+}
