@@ -84,5 +84,78 @@ body {
 }
 .sidebar h3{
 	background-color:#898989;
+	font-size:16px;
+	padding-right:5px;
 	color:#ffffff;
+}
+.sidebar strong{
+	display: block;
+    line-height: 0.7em;
+    padding-top: 4px;
+}
+.sidebar span{
+	color:#898989;
+	display: block;
+}
+.profile{
+	font-size:15px;
+}
+.sidebar li{
+	
+    border-bottom: 1px solid #EEEEEE;
+    clear: both;
+    list-style: none outside none;
+}
+.sidebar li img{
+	float: right;
+	margin-left:10px;
+}
+.sidebar ul{
+	margin:0;
+}
+.sidebar li span{
+	display: block;
+    padding-bottom: 3px;
+}
+.sidebar > div{
+	float: right;
+    margin-bottom: 20px;
+    width: 100%;
+	background-color:#eeeced;
+}
+.sidebar-container-link{
+	font-size:15px;
+}
+.sidebar-container-link-li{
+	padding-right:5px;
+}
+.public-debate-link-container{
+	width:50%;
+	float:right;
+}
+.public-debate-link{
+	padding-right:44px;
+}
+.public-debate-link #span{
+	display:block;
+}
+#comments{
+	background: url("../../../img/comments.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 45px;
+}
+#links{
+	background: url("../../../img/links.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 45px;
+}
+#embeds{
+	background: url("../../../img/embeds.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 45px;
+}
+#following{
+	background: url("../../../img/following.png") no-repeat scroll right top transparent;
+    display: block;
+    height: 45px;
 }
