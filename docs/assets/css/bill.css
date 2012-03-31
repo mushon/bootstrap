@@ -69,7 +69,11 @@ body {
 	margin-right:0;
 }
 
-
+/* side bar*/
 .sidebar-nav {
   padding: 9px 0;
+}
+.sidebar h3{
+	background-color:#898989;
+	color:#ffffff;
 }
