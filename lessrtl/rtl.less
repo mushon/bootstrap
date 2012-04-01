@@ -24,13 +24,13 @@
 
 // Base alert styles
 .alert {
-  padding: 8px 14px 8px 35px;
+  padding: 8px 35px 8px 14px;
 }
 
 // Adjust close link position
 .alert .close {
-  left: -21px;
-  left: auto;
+  right: -21px;
+  right: auto;
 }
 
 
@@ -54,75 +54,75 @@
 
 // Space out series of button groups
 .btn-group + .btn-group {
-  margin-right: 5px;
-  margin-left: auto;
+  margin-left: 5px;
+  margin-right: auto;
 }
 
 // Float them, remove border radius, then re-add to first and last elements
 .btn-group .btn {
-  float: right;
-  margin-right: -1px;
-  margin-left: auto;
+  float: left;
+  margin-left: -1px;
+  margin-right: auto;
 }
 
 // Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
 .btn-group .btn:first-child {
-  margin-right: 0;
-  -webkit-border-top-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-bottom-right-radius: 4px;
-  margin-left: auto;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-bottomleft: 0;
-}
-
-.btn-group .btn:last-child,
-.btn-group .dropdown-toggle {
+  margin-left: 0;
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px;
+  margin-right: auto;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   -moz-border-radius-topright: 0;
   -moz-border-radius-bottomright: 0;
 }
 
-// Reset corners for large buttons
-.btn-group .btn.large:first-child {
-  margin-right: 0;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  border-top-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-bottom-right-radius: 6px;
-  margin-left: auto;
+.btn-group .btn:last-child,
+.btn-group .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   -moz-border-radius-topleft: 0;
   -moz-border-radius-bottomleft: 0;
 }
 
-.btn-group .btn.large:last-child,
-.btn-group .large.dropdown-toggle {
+// Reset corners for large buttons
+.btn-group .btn.large:first-child {
+  margin-left: 0;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
   border-top-left-radius: 6px;
   -webkit-border-bottom-left-radius: 6px;
   -moz-border-radius-bottomleft: 6px;
   border-bottom-left-radius: 6px;
+  margin-right: auto;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   -moz-border-radius-topright: 0;
   -moz-border-radius-bottomright: 0;
+}
+
+.btn-group .btn.large:last-child,
+.btn-group .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
 }
 
 // Split button dropdowns
@@ -130,14 +130,14 @@
 
 // Give the line between buttons some depth
 .btn-group .dropdown-toggle {
-  padding-right: 8px;
   padding-left: 8px;
+  padding-right: 8px;
 }
 
 // Reposition the caret
 .btn .caret {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 /* --- buttons.less ------------------------------------- */
@@ -163,22 +163,22 @@
   }
 
   .active {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
   }
 
   .next {
-    right: 100%;
-    left: auto;
+    left: 100%;
+    right: auto;
   }
   .prev {
-    right: -100%;
-    left: auto;
+    left: -100%;
+    right: auto;
   }
   .next.right,
   .prev.left {
-    right: 0; 
-    left: auto;
+    left: 0; 
+    right: auto;
   }
 }
 
@@ -186,12 +186,12 @@
 // ---------------------------
 
 .carousel-control {
-  right: 15px;
+  left: 15px;
   
   // Reposition the left one
   &.left {
-    right: auto;
-    left: 15px;
+    left: auto;
+    right: 15px;
   }
 }
 
@@ -201,7 +201,7 @@
 // -----------
 
 .close {
-  float: left;
+  float: right;
 }
 
 
@@ -220,17 +220,17 @@
 /* --- dropdowns.less ------------------------------------- */
 
 .dropdown .caret {
-  margin-right: 2px;
-  margin-left: auto;
+  margin-left: 2px;
+  margin-right: auto;
 }
 
 // The dropdown menu (ul)
 .dropdown-menu {
-  right: 0;
-  float: right;
-  *border-left-width: 2px;
-  *border-right-width: auto;
-  right: auto;
+  left: 0;
+  float: left;
+  *border-right-width: 2px;
+  *border-left-width: auto;
+  left: auto;
 }
 
 
@@ -242,21 +242,21 @@
 // Indent the labels to position radios/checkboxes as hanging
 .radio,
 .checkbox {
-  padding-right: 18px;
-  padding-left: 0;
+  padding-left: 18px;
+  padding-right: 0;
 }
 
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
-  float: right;
-  margin-right: -18px;
-  margin-left: auto;
+  float: left;
+  margin-left: -18px;
+  margin-right: auto;
 }
 
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
-  margin-right: 10px;
-  margin-left: auto;
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 // Grid style input sizes
@@ -264,49 +264,49 @@ input[class*="span"],
 select[class*="span"],
 textarea[class*="span"],
 .uneditable-input {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .help-inline {
-  padding-right: 5px;
-  padding-left: 0;
+  padding-left: 5px;
+  padding-right: 0;
 }
 
 .input-prepend,
 .input-append {
   .uneditable-input {
-    border-right-color: #ccc;
+    border-left-color: #ccc;
   }
   .add-on {
-    float: right;
-    margin-left: -1px;
-    margin-right: auto;
+    float: left;
+    margin-right: -1px;
+    margin-left: auto;
   }
 }
 
 .input-append {
   input,
   .uneditable-input {
-    float: right;
+    float: left;
   }
   .uneditable-input {
-    border-right-color: #eee;
-    border-left-color: #ccc;    
+    border-left-color: #eee;
+    border-right-color: #ccc;    
   }
   .add-on {
-    margin-left: 0;
-    margin-right: -1px;
+    margin-right: 0;
+    margin-left: -1px;
   }
   input:first-child {
     // In IE7, having a hasLayout container (from clearfix's zoom:1) can make the first input
     // inherit the sum of its ancestors' margins.
-    *margin-right: -160px;
-    *margin-left: auto;
+    *margin-left: -160px;
+    *margin-right: auto;
 
     &+.add-on {
-      *margin-right: -21px;
-      *margin-left: auto;
+      *margin-left: -21px;
+      *margin-right: auto;
     }
   }
 }
@@ -318,18 +318,18 @@ textarea[class*="span"],
 .form-horizontal {
   // Float the labels left
   .control-label {
-    float: right;
-    text-align: left;
+    float: left;
+    text-align: right;
   }
   // Move over all input controls and content
   .controls {
-    margin-left: auto;
-    margin-right: 160px;
+    margin-right: auto;
+    margin-left: 160px;
   }
   // Move over buttons in .form-actions to align with .controls
   .form-actions {
-    padding-right: 160px;
-    padding-left: auto;
+    padding-left: 160px;
+    padding-right: auto;
   }
 }
 
@@ -354,8 +354,8 @@ textarea[class*="span"],
 // Site container
 // -------------------------
 .container-fixed() {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 // Le grid system
@@ -363,20 +363,20 @@ textarea[class*="span"],
 #gridSystem {
   // Setup the mixins to be used
   .offset(@gridColumnWidth, @gridGutterWidth, @columns) {
-    margin-right: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
-    margin-left: auto;
+    margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+    margin-right: auto;
   }
   .gridColumn(@gridGutterWidth) {
-    float: right;
-    margin-right: @gridGutterWidth;
-    margin-left: auto;
+    float: left;
+    margin-left: @gridGutterWidth;
+    margin-right: auto;
   }
   // Take these values and mixins, and make 'em do their thang
   .generate(@gridColumns, @gridColumnWidth, @gridGutterWidth) {
     // Row surrounds the columns
     .row {
-      margin-right: @gridGutterWidth * -1;
-      margin-left: auto;
+      margin-left: @gridGutterWidth * -1;
+      margin-right: auto;
       .clearfix();
     }
   }
@@ -386,16 +386,16 @@ textarea[class*="span"],
 // -------------------------
 #fluidGridSystem {
   .gridColumn(@fluidGridGutterWidth) {
-    float: right;
-    margin-right: @fluidGridGutterWidth;
-    margin-left: auto;
+    float: left;
+    margin-left: @fluidGridGutterWidth;
+    margin-right: auto;
   }
   // Take these values and mixins, and make 'em do their thang
   .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {
     .row-fluid {
       > [class*="span"]:first-child {
-        margin-right: 0;
-        margin-left: auto;
+        margin-left: 0;
+        margin-right: auto;
       }
     }
   }
@@ -405,14 +405,14 @@ textarea[class*="span"],
 // -------------------------
 // Use .makeRow and .makeColumn to assign semantic layouts grid system behavior
 .makeRow() {
-  margin-right: @gridGutterWidth * -1;
-  margin-left: auto;
+  margin-left: @gridGutterWidth * -1;
+  margin-right: auto;
 }
 
 .makeColumn(@columns: 1) {
-  float: right;
-  margin-right: @gridGutterWidth;
-  margin-left: auto;
+  float: left;
+  margin-left: @gridGutterWidth;
+  margin-right: auto;
 }
 
 
@@ -420,18 +420,18 @@ textarea[class*="span"],
 
 // Base modal
 .modal {
-  right: 50%;
+  left: 50%;
   margin: -250px -280px 0 0;
-  right: auto;
+  left: auto;
 }
 
 // Footer (for actions)
 .modal-footer {
   .border-radius(0 6px 6px 0);
   .btn {
-    float: left;
-    margin-right: 5px;
-    margin-left: auto;
+    float: right;
+    margin-left: 5px;
+    margin-right: auto;
   }
 }
 
@@ -452,45 +452,45 @@ textarea[class*="span"],
 // ----------
 
 .nav {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 // NAV LIST
 // --------
 
 .nav-list {
-  padding-right: 14px;
   padding-left: 14px;
+  padding-right: 14px;
 }
 
 .nav-list > li > a,
 .nav-list .nav-header {
-  margin-right:  -15px;
-  margin-left: -15px;
+  margin-left:  -15px;
+  margin-right: -15px;
 }
 
 .nav-list [class^="icon-"] {
-  margin-left: 2px;
-  margin-right: auto;
+  margin-right: 2px;
+  margin-left: auto;
 }
 
 .nav-tabs > li,
 .nav-pills > li {
-  float: right;
+  float: left;
 }
 
 .nav-tabs > li > a,
 .nav-pills > li > a {
-  padding-left: 12px;
   padding-right: 12px;
-  margin-left: 2px;
-  margin-right: auto;
+  padding-left: 12px;
+  margin-right: 2px;
+  margin-left: auto;
 }
 
 .nav-stacked > li > a {
-  margin-left: 0;
-  margin-right: auto;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 
@@ -500,36 +500,36 @@ textarea[class*="span"],
 // -----
 
 .pager {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .pager .next a {
-  float: left;
+  float: right;
 }
 
 .pager .previous a {
-  float: right;
+  float: left;
 }
 
 /* --- pagination.less ------------------------------------- */
 
 .pagination ul {
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .pagination a {
-  float: right;
-  border-right-width: 0;
+  float: left;
+  border-left-width: 0;
 }
 
 .pagination li:first-child a {
-  border-right-width: 1px;
+  border-left-width: 1px;
 }
 
 .pagination-left {
-  text-align: left;
+  text-align: right;
 }
 
 /* --- popovers.less ------------------------------------- */
@@ -579,18 +579,18 @@ html, body {
 // ----------
 
 .thumbnails {
-  margin-right: -@gridGutterWidth;
-  margin-left: auto;
+  margin-left: -@gridGutterWidth;
+  margin-right: auto;
 }
 
 .thumbnails > li {
-  float: right;
+  float: left;
 }
 
 // Images and captions
 .thumbnail > img {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -611,33 +611,33 @@ ul, ol {
 }
 ul.unstyled,
 ol.unstyled {
-  margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 // Description Lists
 dd {
-  margin-left: auto;
-  margin-right: @baseLineHeight / 2;
+  margin-right: auto;
+  margin-left: @baseLineHeight / 2;
 }
 
 // Blockquotes
 blockquote {
   padding: 0 15px 0 0;
   margin: 0 0 @baseLineHeight;
-  border-right: 5px solid @grayLighter;
-  border-left: auto;
+  border-left: 5px solid @grayLighter;
+  border-right: auto;
 
   // Float right with text-align: right
   &.pull-left {
-    float: left;
-    padding-right: 0;
-    padding-left: 15px;
-    border-right: 0;
-    border-left: 5px solid @grayLighter;
+    float: right;
+    padding-left: 0;
+    padding-right: 15px;
+    border-left: 0;
+    border-right: 5px solid @grayLighter;
     p,
     small {
-      text-align: left;
+      text-align: right;
     }
   }
 }
