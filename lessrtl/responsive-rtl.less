@@ -1,0 +1,63 @@
+/*
+-- responsive.less ------------------------------------- */
+
+// REQUIRES FURTHER INVESTIGATION
+// ------------------------------
+
+@import "responsive.less";
+
+@media (max-width: 480px) {
+    // Remove the horizontal form styles
+  .form-horizontal .control-group > label {
+    text-align: left;
+  }
+  // Move over all input controls and content
+  .form-horizontal .controls {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+  
+@media (max-width: 767px) {
+  // Undo negative margin on rows
+  .row {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 979px) {
+  // Account for brand name
+  .navbar .brand {
+    margin: 0 -5px 0 0;
+  }
+  // Nav collapse clears brand
+  .navbar .nav-collapse {
+    clear: left;
+  }  
+  // Dropdowns in the navbar
+  .navbar .dropdown-menu {
+    left: auto;
+    right: inherit;
+  }
+  // Pull left (secondary) nav content
+  .navbar .nav.pull-right {
+    float: none;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  // Thumbnails
+  .thumbnails {
+    margin-right: auto;
+    margin-left: -30px;
+  }
+  .thumbnails > li {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+}
